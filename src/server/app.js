@@ -1,19 +1,12 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const api_endpoints = require('../api');
+const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
+const router = express.Router();
 
 app.use(bodyParser.json());
 
-app.use('/', does_method_exist, api_endpoints);
-
-app.get('*', (req, res) => {
-  res.status(404).send('404 Not Found');
-});
-
-function does_method_exist(req, res, next) {
-  next();
-}
-
+router.get("/ping", (req, res) => {
+  res.send("pong")
+})
 
 module.exports = app;
