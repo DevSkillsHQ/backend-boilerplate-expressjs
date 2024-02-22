@@ -12,7 +12,7 @@
     "sqlite3": "^5.1.7"
   },
   "devDependencies": {
-    "jest": "^27.5.1",
+    "jest": "^29.7.0",
     "supertest": "^6.3.4"
   }
 }
