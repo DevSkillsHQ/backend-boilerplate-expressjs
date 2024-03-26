@@ -7,7 +7,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "express": "^4.19.1",
+    "express": "^4.19.2",
     "nodemon": "^3.1.0",
     "sqlite3": "^5.1.7"
   },
